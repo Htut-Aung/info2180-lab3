@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const squares = document.querySelectorAll("#board div");
     const status = document.getElementById("status");
