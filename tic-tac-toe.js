@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         square.addEventListener("click", function() {
-            if (gameOver) {
-                return;
-            }
+            if (board[index] !== "" || gameOver) {
+            return;
+        }
 
             board[index] = currentPlayer;
             square.textContent = currentPlayer;
@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
     status.textContent = originalMessage;
     status.classList.remove("you-won");
 });
-
 });
 
 
